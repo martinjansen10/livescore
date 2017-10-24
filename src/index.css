@@ -3597,9 +3597,9 @@ tbody.collapse.in {
     position: relative;
     height: 0;
     overflow: hidden;
-    transition-property: height, visibility;
-    transition-duration: .35s;
-    transition-timing-function: ease
+    -webkit-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 .caret {
     display: inline-block;
@@ -8226,8 +8226,9 @@ footer .navbar-social li {
     content: "+"
 }
 .match-detail {
-    padding-top: 20px
+    padding-top: 20px;
 }
+
 .match-detail .headline {
     font-size: 11px;
     color: #ababab;
