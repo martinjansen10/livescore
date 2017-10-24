@@ -3582,10 +3582,10 @@ input[type=submit].btn-block {
     opacity: 1
 }
 .collapse {
-    opacity: 0;
+    display: none
 }
 .collapse.in {
-    opacity: 1;
+    display: block
 }
 tr.collapse.in {
     display: table-row
