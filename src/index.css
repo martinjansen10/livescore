@@ -3582,10 +3582,10 @@ input[type=submit].btn-block {
     opacity: 1
 }
 .collapse {
-    display: none
+    opacity: 0;
 }
 .collapse.in {
-    display: block
+    opacity: 1;
 }
 tr.collapse.in {
     display: table-row
@@ -3597,9 +3597,9 @@ tbody.collapse.in {
     position: relative;
     height: 0;
     overflow: hidden;
-    -webkit-transition: all .5s ease-out;
-    -o-transition: all .5s ease-out;
-    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .caret {
     display: inline-block;

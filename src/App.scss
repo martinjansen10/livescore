@@ -1,39 +1,32 @@
-* {
-  box-sizing: border-box;
-}
-
-body{
-  font-family:Montserrat,sans-serif;
-}
+@import "./src/styles/main";
 
 .App {
   min-width: 990px;
   margin: 0 auto;
-}
 
-.App__Content {
-  display: flex;
-  flex-direction: row;
-}
+  &__Content {
+    display: flex;
+    flex-direction: row;
+  }
 
+  &__Header {
+    background-color: #40948b;
+    height: 90px;
+  }
 
-.App__Header {
-  background-color: #40948b;
-  height: 90px;
-}
+  &__LeftSidebar {
+    flex-basis: 25%;
+    /*width: 250px;*/
+    /*height: 500px;*/
+  }
+  
+  &__Home {
+    flex-basis: 50%;
+  }
 
-.App__LeftSidebar {
-  flex-basis: 25%;
-  /*width: 250px;*/
-  /*height: 500px;*/
-}
-
-.App__Home {
-  flex-basis: 50%;
-}
-
-.App__RightSidebar {
-  flex-basis: 25%;
-  /*width: 250px;*/
-  height: 500px;
+  &__RightSidebar {
+    flex-basis: 25%;
+    /*width: 250px;*/
+    height: 500px;
+  }
 }
