@@ -1,0 +1,17 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" enable-background="new 0 0 320 320">
+  <style>
+    .st0{fill:#F6F7FC;} .st1{filter:url(#AI_GaussianBlur_4);} .st2{fill:#DEDFE3;} .st3{fill:#FAFAFA;}
+  </style>
+  <filter id="AI_GaussianBlur_4">
+    <feGaussianBlur stdDeviation="4"/>
+  </filter>
+  <g id="XMLID_14_">
+    <path id="XMLID_17_" class="st0" d="M0 320h58.5c7 0 14-3.5 18.2-10.4l80-139c4.4-6.3 4.4-15 0-21.3-26.6-46-53.3-93-80-139C72.4 3.6 65.5 0 58.5 0H0"/>
+    <g id="XMLID_20_" class="st1">
+      <path id="XMLID_23_" class="st2" d="M156.8 149.3c-26.7-46-53.4-93-80-139C72.3 3.6 65.4 0 58.4 0h-2c7 0 14 3.5 18.2 10.4 26.7 46 53.4 93 80 139 4.4 6.3 4.4 15 0 21.3l-80 139c-4.3 6.8-11.2 10.3-18.2 10.3h2c7 0 14-3.5 18.2-10.4l80-139c4.4-6.3 4.4-15 0-21.3z"/>
+    </g>
+    <g id="XMLID_18_">
+      <path id="XMLID_25_" class="st3" d="M58.5 0c7 0 14 3.5 18.2 10.4 26.7 46 53.4 93 80 139 4.4 6.3 4.4 15 0 21.3l-80 139c-4.3 6.8-11.2 10.3-18.2 10.3H320V0H58.5z"/>
+    </g>
+  </g>
+</svg>
