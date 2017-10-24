@@ -1,0 +1,20 @@
+
+
+.odds__table > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.odds__table  td, .odds__table  th {
+   text-align: center;
+   border: 1px solid #eaf0ee;
+}
+
+.last  span {
+    margin: 0px 3px;
+    background-color: #49aa9e;
+    color: #fff;
+    display: inline-block;
+    padding: 2px;
+}

@@ -1,0 +1,119 @@
+.leftSidebar {
+    background-color: #e8efed;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftSidebar__ads {
+    text-align: center;
+}
+
+.topLeagues > span, .counteries > span {
+    color: #ababab;
+    padding-top: 25px;
+    padding-left:  20px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.topLeagues__list, .counteries__list {
+    padding-left: 0;
+    
+}
+
+.topLeagues__listItem {
+    list-style: none;
+    border-bottom: 1px solid #dae6e3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-left: 20px;
+    border-left: 4px solid #e8efed;
+
+}
+
+.topLeagues__listItem:hover, .counteries__listItem:hover {
+    background-color: #dae6e3;
+    border-left: 4px solid #49aa9e;
+} 
+
+.topLeagues__listItem:hover .topLeagues__title, .counteries__listItem:hover .counteries__title {
+    text-decoration: underline;
+} 
+
+.topLeagues__title {
+}
+
+.topLeagues__counter, .counteries__counter {
+    float: right;
+    padding: 6px 4px;
+    color: #081b3a;
+    background-color: #dae6e3;
+    margin-right: 15px;
+    text-decoration: none;
+    width: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.topLeagues__counter::first-letter {
+    color: #202121;
+}
+
+.counteries {
+    
+}
+
+.counteries__list {
+    padding-right: 0px;
+}
+
+.counteries__listItem {
+        list-style: none;
+        border-bottom: 1px solid #dae6e3;
+        height: 40px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding-left: 20px;
+        border-left: 4px solid #e8efed;
+}
+
+
+.counteries__flag {
+    width: 18px;
+    height: 18px;
+}
+
+
+.counteries__title {
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counteries__title_text {
+
+}
+
+
+.counteries__counter {
+    margin-right: 0px;
+}
+
+.counteries__caret {
+    width: 40px;
+    text-align: center;
+}
+
+.ads {
+    
+}
+

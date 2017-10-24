@@ -1,0 +1,43 @@
+.match__item {
+    border-bottom: 1px solid #eff4f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match__datetime {
+    color: #ababab;
+    font-size: 9pt;
+}
+.match__status {
+    color: #49aa9e;
+    font-size: 9pt;
+    text-transform: uppercase;
+}
+
+.match__clubTitle {
+    text-transform: uppercase;
+    font-weight: 600; 
+    font-size: 11pt;
+    color: #202121;
+}
+
+.match__clubEmblem {
+    margin: 0 8px;
+}
+.match__clubOne_emblem {}
+.match__score {
+    font-size: 14pt;
+    color: #202121;
+
+}
+.match__clubTwo_emblem {}
+.match__clubTwo {}
+.match__digits {
+    width: 80px;
+    font-size: 9pt;
+}
+.match__more {
+    width: 21px;
+}
