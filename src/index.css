@@ -3598,9 +3598,9 @@ tbody.collapse.in {
   position: relative;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 .caret {
   display: inline-block;
@@ -8176,7 +8176,7 @@ footer .navbar-social li {
   font-weight: 400;
 }
 .match-wrap {
-  /* padding: 0 0 10px; */
+  padding: 0 0 10px;
   border-bottom: 1px solid #eff3f2;
   margin-bottom: 10px;
 }
@@ -8391,7 +8391,7 @@ footer .navbar-social li {
   content: '+';
 }
 .match-detail {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 .match-detail .headline {
