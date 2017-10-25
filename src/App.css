@@ -3525,6 +3525,16 @@ input:-webkit-autofill {
   font-size: 24px;
 }
 
+.rightSidebar .live_matchcast {
+  background-color: #e1ece8;
+  overflow: hidden;
+}
+.rightSidebar .live_matchcast_div {
+  float: left;
+  width: 100%;
+  padding: 25px 25px;
+}
+
 .odds {
   padding: 5px 0px;
 }

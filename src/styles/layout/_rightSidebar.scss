@@ -1,0 +1,11 @@
+.rightSidebar {
+    .live_matchcast {
+        background-color: #e1ece8;
+        overflow: hidden;
+        &_div {
+            float: left;
+            width: 100%;
+            padding: 25px 25px;
+        }
+    }
+}

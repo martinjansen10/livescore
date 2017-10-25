@@ -7,18 +7,15 @@ class ODDS extends Component {
       <div className="odds">
         <div className="odds__header">ODDS</div>
         <div className="odds__menu">
-          OVERALL <span style={{ "text-decoration": "underline" }}>
-            HOME
-          </span>{" "}
-          AWAY
+          OVERALL <span style={{ textDecoration: "underline" }}>HOME</span> AWAY
         </div>
         <div className="odds__table">
           <table>
             <thead>
               <tr style={{ color: "#b6b7b7" }}>
-                <th rowspan="2">BOOKMARKER</th>
-                <th colspan="2">ASIAN HANDICAP</th>
-                <th colspan="3">1X2</th>
+                <th rowSpan="2">BOOKMARKER</th>
+                <th colSpan="2">ASIAN HANDICAP</th>
+                <th colSpan="3">1X2</th>
               </tr>
               <tr style={{ color: "#b6b7b7" }}>
                 <th>HOME</th>
@@ -34,7 +31,7 @@ class ODDS extends Component {
                   <img
                     src="/img/1xbet-logo.png"
                     alt="BL"
-                    style={{ "max-width": "90px" }}
+                    style={{ maxWidth: "90px" }}
                   />
                 </td>
                 <td>
@@ -58,7 +55,7 @@ class ODDS extends Component {
                   <img
                     src="/img/1xbet-logo.png"
                     alt="BL"
-                    style={{ "max-width": "90px" }}
+                    style={{ maxWidth: "90px" }}
                   />
                 </td>
                 <td>
@@ -82,7 +79,7 @@ class ODDS extends Component {
                   <img
                     src="/img/1xbet-logo.png"
                     alt="BL"
-                    style={{ "max-width": "90px" }}
+                    style={{ maxWidth: "90px" }}
                   />
                 </td>
                 <td>
@@ -106,7 +103,7 @@ class ODDS extends Component {
                   <img
                     src="/img/1xbet-logo.png"
                     alt="BL"
-                    style={{ "max-width": "90px" }}
+                    style={{ maxWidth: "90px" }}
                   />
                 </td>
                 <td>
@@ -130,7 +127,7 @@ class ODDS extends Component {
                   <img
                     src="/img/1xbet-logo.png"
                     alt="BL"
-                    style={{ "max-width": "90px" }}
+                    style={{ maxWidth: "90px" }}
                   />
                 </td>
                 <td>

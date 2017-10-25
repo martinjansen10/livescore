@@ -36,7 +36,7 @@ class Home extends Component {
               }}
             />
             <Route
-              path={`${this.props.match.url}match_detail`}
+              path={`${this.props.match.url}match-detail`}
               render={() => {
                 return <MatchDetail />;
               }}

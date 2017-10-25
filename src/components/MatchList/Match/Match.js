@@ -19,7 +19,10 @@ class Match extends Component {
           <img src={item.emblem2} alt="clubTwo emblem" />
         </div>
         <div className="match__clubTitle">{item.clubTwo}</div>
-        <div className="match__digits">{item.digits}</div>
+        <div
+          className="match__digits"
+          dangerouslySetInnerHTML={{ __html: item.digits }}
+        />
         <div className="match__more">{item.more}</div>
       </div>
     );
