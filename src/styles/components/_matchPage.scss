@@ -1,0 +1,71 @@
+.matchPage {
+    padding: 10px;
+    background-color: #f4f7f6;
+}
+
+.matchPage__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.matchPage__Emblem{
+    text-align: center;
+}
+
+.matchPage__score_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matchPage__status {
+    font-size: 8pt;
+    color: #49aa9e;
+    border: 2px solid #49aa9e;
+    padding: 6px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+.matchPage__score {
+    font-size: 32pt;
+}
+
+.matchPage__half, .matchPage__datetime {
+    font-size: 9pt;
+    color: #ababab;
+}
+
+.matchPage__league {
+    text-align: center;
+    font-size: 9pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    height: 1px;
+
+    img.plus {
+        margin: 0px 3px;
+        max-width: 12px;
+        position: absolute;
+        left: 50%;
+    }
+}
+
+.matchPage__league_title_left {
+    font-weight: 600;
+    position: absolute;
+    right: 51%;
+}
+
+.matchPage__league_title_right {
+    position: absolute;
+    left: 55%;
+}
+
+.matchPage__odds {
+    width: 100%;
+}
