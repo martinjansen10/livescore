@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import LeaguePageHeader from './LeaguePageHeader/LeaguePageHeader';
-import LeagueStandings from './LeagueStandings/LeagueStandings';
-import MatchList from '../MatchList/MatchList';
-import './LeaguePage.css';
+import React, { Component } from "react";
+import LeaguePageHeader from "./LeaguePageHeader/LeaguePageHeader";
+import LeagueStandings from "./LeagueStandings/LeagueStandings";
+import MatchList from "../MatchList/MatchList";
+import "./LeaguePage.css";
 
-import matches from '../../seeds/MatchesSeed';
+import matches from "../../seeds/MatchesSeed";
 
 export default class LeaguePage extends Component {
   render() {

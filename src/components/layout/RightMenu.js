@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import ads from '../../images/ads-250x360.jpg';
+import React, { Component } from "react";
+import ads from "../../images/ads-250x360.jpg";
 
 class RightMenu extends Component {
   render() {

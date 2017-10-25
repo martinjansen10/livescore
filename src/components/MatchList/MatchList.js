@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Match from './Match/Match';
+import React, { Component } from "react";
+import Match from "./Match/Match";
 
-import './MatchList.css';
+import "./MatchList.css";
 
 class MatchList extends Component {
   render() {

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './RightSidebar.css';
+import React, { Component } from "react";
+import "./RightSidebar.css";
 
 class RightSidebar extends Component {
   render() {

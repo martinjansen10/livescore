@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './Match.css';
+import React, { Component } from "react";
+import "./Match.css";
 
 class Match extends Component {
   render() {
@@ -12,11 +12,11 @@ class Match extends Component {
         </div>
         <div className="match__clubTitle">{item.clubOne}</div>
         <div className="match__clubEmblem">
-          <img src={`/${item.emblem1}`} alt="clubOne emblem" />
+          <img src={item.emblem1} alt="clubOne emblem" />
         </div>
         <div className="match__score">{item.score}</div>
         <div className="match__clubEmblem">
-          <img src={`/${item.emblem2}`} alt="clubTwo emblem" />
+          <img src={item.emblem2} alt="clubTwo emblem" />
         </div>
         <div className="match__clubTitle">{item.clubTwo}</div>
         <div className="match__digits">{item.digits}</div>

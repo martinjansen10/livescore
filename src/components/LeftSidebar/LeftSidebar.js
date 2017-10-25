@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './LeftSidebar.css';
+import React, { Component } from "react";
+import "./LeftSidebar.css";
 
 class LeftSidebar extends Component {
   render() {
@@ -30,8 +30,8 @@ class LeftSidebar extends Component {
                 a = <div className="counteries__counter">{item.counter}</div>;
               } else a = null;
 
-              item.flag = 'flag-icon flag-icon-de';
-              var cls = 'counteries__flag ' + item.flag;
+              item.flag = "flag-icon flag-icon-de";
+              var cls = "counteries__flag " + item.flag;
 
               return (
                 <li key={item.id} className="counteries__listItem">

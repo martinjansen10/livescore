@@ -1,32 +1,33 @@
-import React, { Component } from 'react';
-import ads from '../../images/ads-468x60.jpg';
-import lester from '../../images/icons/clubs/eng1/lester.jpg';
-import mcity from '../../images/icons/clubs/eng1/manchestercity.jpg';
-import chelsea from '../../images/icons/clubs/eng1/chelsea.jpg';
-import mu from '../../images/icons/clubs/eng1/manchesterunited.jpg';
+import React, { Component } from "react";
+import ads from "../../images/ads-468x60.jpg";
+import lester from "../../images/icons/clubs/eng1/lester.jpg";
+import mcity from "../../images/icons/clubs/eng1/manchestercity.jpg";
+import chelsea from "../../images/icons/clubs/eng1/chelsea.jpg";
+import mu from "../../images/icons/clubs/eng1/manchesterunited.jpg";
+import { Link } from "react-router-dom";
 
 class HomeContent extends Component {
   state = {
     leagues: [
       {
-        name: 'Premiere League',
-        country: 'England',
-        flag: 'flag flag-england'
+        name: "Premiere League",
+        country: "England",
+        flag: "flag flag-england"
       },
       {
-        name: 'Serie A',
-        country: 'Italy',
-        flag: 'flag flag-it'
+        name: "Serie A",
+        country: "Italy",
+        flag: "flag flag-it"
       },
       {
-        name: 'Ligue 1',
-        country: 'France',
-        flag: 'flag flag-fr'
+        name: "Ligue 1",
+        country: "France",
+        flag: "flag flag-fr"
       },
       {
-        name: 'Primera Division',
-        country: 'Spain',
-        flag: 'flag flag-es'
+        name: "Primera Division",
+        country: "Spain",
+        flag: "flag flag-es"
       }
     ]
   };
@@ -47,7 +48,7 @@ class HomeContent extends Component {
               role="tab"
               data-toggle="tab"
             >
-              <span className="color-blue">Live</span>{' '}
+              <span className="color-blue">Live</span>{" "}
               <span className="badge">8</span>
             </a>
           </li>
@@ -77,7 +78,7 @@ class HomeContent extends Component {
         </ul>
         <div className="tab-content">
           <div className="ads ads-486x60">
-            <img src={ads} alt="" />
+            <img src={ads} alt="ads" />
           </div>
           <div role="tabpanel" className="tab-pane active" id="all">
             {this.state.leagues.map((item, id) => (
@@ -111,7 +112,7 @@ class HomeContent extends Component {
                     aria-controls={`match-id-01-${item.country}`}
                   >
                     <div className="match-date">
-                      23.08 20:45{' '}
+                      23.08 20:45{" "}
                       <span className="match-finished">Finished</span>
                     </div>
                     <div className="match-clubs">
@@ -122,10 +123,10 @@ class HomeContent extends Component {
                               src={lester}
                               alt=""
                               className="match-club-logo"
-                            />{' '}
+                            />{" "}
                             <span className="match-club-name">
                               Lester City
-                            </span>{' '}
+                            </span>{" "}
                             <span className="match-club-score visible-xs">
                               2
                             </span>
@@ -133,7 +134,7 @@ class HomeContent extends Component {
                         </div>
                       </div>
                       <div className="match-club-score hidden-xs">
-                        2 <span className="divider">:</span>{' '}
+                        2 <span className="divider">:</span>{" "}
                         <span className="match-win">3</span>
                       </div>
                       <div className="match-club-second match-win">
@@ -143,10 +144,10 @@ class HomeContent extends Component {
                               src={mcity}
                               alt=""
                               className="match-club-logo"
-                            />{' '}
+                            />{" "}
                             <span className="match-club-name">
                               Manchester City
-                            </span>{' '}
+                            </span>{" "}
                             <span className="match-club-score visible-xs">
                               3
                             </span>
@@ -171,23 +172,25 @@ class HomeContent extends Component {
                     className="match-detail collapse"
                     id={`match-id-01-${item.country}`}
                   >
-                    <div className="match-detail-odds">
-                      <div className="first-odds">
-                        <span className="type-1">1</span>{' '}
-                        <span className="type-2">2</span>
+                    <Link to={"/match"}>
+                      <div className="match-detail-odds">
+                        <div className="first-odds">
+                          <span className="type-1">1</span>{" "}
+                          <span className="type-2">2</span>
+                        </div>
+                        <span className="total-odds">1 : 1</span>
+                        <div className="second-odds">
+                          <span className="type-1">1</span>
+                        </div>
                       </div>
-                      <span className="total-odds">1 : 1</span>
-                      <div className="second-odds">
-                        <span className="type-1">1</span>
-                      </div>
-                    </div>
+                    </Link>
                     <div className="match-detail-total-shoots">
                       <span className="headline">Total shoots</span>
                       <div className="progress">
                         <div className="first-shoots">11</div>
                         <div className="scale">
-                          <div style={{ width: '60%' }} />
-                          <div style={{ width: '40%' }} />
+                          <div style={{ width: "60%" }} />
+                          <div style={{ width: "40%" }} />
                         </div>
                         <div className="second-shoots">18</div>
                       </div>
@@ -227,10 +230,10 @@ class HomeContent extends Component {
                               src={chelsea}
                               alt=""
                               className="match-club-logo"
-                            />{' '}
+                            />{" "}
                             <span className="match-club-name">
                               Chelsea
-                            </span>{' '}
+                            </span>{" "}
                             <span className="match-club-score visible-xs">
                               0
                             </span>
@@ -247,10 +250,10 @@ class HomeContent extends Component {
                               src={mu}
                               alt=""
                               className="match-club-logo"
-                            />{' '}
+                            />{" "}
                             <span className="match-club-name">
                               Manchester United
-                            </span>{' '}
+                            </span>{" "}
                             <span className="match-club-score visible-xs">
                               1
                             </span>
@@ -275,23 +278,25 @@ class HomeContent extends Component {
                     className="match-detail collapse"
                     id={`match-id-02-${item.country}`}
                   >
-                    <div className="match-detail-odds">
-                      <div className="first-odds">
-                        <span className="type-1">1</span>{' '}
-                        <span className="type-2">2</span>
+                    <Link to={"/match"}>
+                      <div className="match-detail-odds">
+                        <div className="first-odds">
+                          <span className="type-1">1</span>{" "}
+                          <span className="type-2">2</span>
+                        </div>
+                        <span className="total-odds">1 : 1</span>
+                        <div className="second-odds">
+                          <span className="type-1">1</span>
+                        </div>
                       </div>
-                      <span className="total-odds">1 : 1</span>
-                      <div className="second-odds">
-                        <span className="type-1">1</span>
-                      </div>
-                    </div>
+                    </Link>
                     <div className="match-detail-total-shoots">
                       <span className="headline">Total shoots</span>
                       <div className="progress">
                         <div className="first-shoots">11</div>
                         <div className="scale">
-                          <div style={{ width: '60%' }} />
-                          <div style={{ width: '40%' }} />
+                          <div style={{ width: "60%" }} />
+                          <div style={{ width: "40%" }} />
                         </div>
                         <div className="second-shoots">18</div>
                       </div>
@@ -320,7 +325,7 @@ class HomeContent extends Component {
                     aria-controls={`#match-id-03-${item.country}`}
                   >
                     <div className="match-date">
-                      23.08 20:45{' '}
+                      23.08 20:45{" "}
                       <span className="match-expected">1d 2h 34m</span>
                     </div>
                     <div className="match-clubs">
@@ -331,10 +336,10 @@ class HomeContent extends Component {
                               src={lester}
                               alt=""
                               className="match-club-logo"
-                            />{' '}
+                            />{" "}
                             <span className="match-club-name">
                               Lester City
-                            </span>{' '}
+                            </span>{" "}
                             <span className="match-club-score visible-xs" />
                           </div>
                         </div>
@@ -349,10 +354,10 @@ class HomeContent extends Component {
                               src={mcity}
                               alt=""
                               className="match-club-logo"
-                            />{' '}
+                            />{" "}
                             <span className="match-club-name">
                               Manchester City
-                            </span>{' '}
+                            </span>{" "}
                             <span className="match-club-score visible-xs" />
                           </div>
                         </div>
@@ -375,23 +380,25 @@ class HomeContent extends Component {
                     className="match-detail collapse"
                     id={`match-id-03-${item.country}`}
                   >
-                    <div className="match-detail-odds">
-                      <div className="first-odds">
-                        <span className="type-1">1</span>{' '}
-                        <span className="type-2">2</span>
+                    <Link to={"/match"}>
+                      <div className="match-detail-odds">
+                        <div className="first-odds">
+                          <span className="type-1">1</span>{" "}
+                          <span className="type-2">2</span>
+                        </div>
+                        <span className="total-odds">1 : 1</span>
+                        <div className="second-odds">
+                          <span className="type-1">1</span>
+                        </div>
                       </div>
-                      <span className="total-odds">1 : 1</span>
-                      <div className="second-odds">
-                        <span className="type-1">1</span>
-                      </div>
-                    </div>
+                    </Link>
                     <div className="match-detail-total-shoots">
                       <span className="headline">Total shoots</span>
                       <div className="progress">
                         <div className="first-shoots">11</div>
                         <div className="scale">
-                          <div style={{ width: '60%' }} />
-                          <div style={{ width: '40%' }} />
+                          <div style={{ width: "60%" }} />
+                          <div style={{ width: "40%" }} />
                         </div>
                         <div className="second-shoots">18</div>
                       </div>

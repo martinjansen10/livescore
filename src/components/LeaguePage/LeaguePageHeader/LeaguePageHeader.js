@@ -1,12 +1,12 @@
-import React from 'react';
-import './LeaguePageHeader.css';
+import React from "react";
+import "./LeaguePageHeader.css";
 
 const LeaguePageHeader = () => {
   return (
     <div className="leaguePageHeader">
       <div className="leaguePageHeader__head">
         <div className="leaguePageHeader__logo">
-          <img src="img/league-emblem.png" alt="" />
+          <img src="/img/league-emblem.png" alt="" />
         </div>
         <div className="leaguePageHeader__title">
           <div>Premiere League</div>

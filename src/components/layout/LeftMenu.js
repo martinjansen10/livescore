@@ -1,40 +1,40 @@
-import React, { Component } from 'react';
-import ads from '../../images/ads-250x250.jpg';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import ads from "../../images/ads-250x250.jpg";
+import { Link } from "react-router-dom";
 
-import topLeagues from '../../seeds/topLeagues';
+import topLeagues from "../../seeds/topLeagues";
 
 class LeftMenu extends Component {
   state = {
     countries: [
       {
-        country: 'England',
-        flag: 'flag flag-england',
+        country: "England",
+        flag: "flag flag-england",
         badge: 12
       },
       {
-        country: 'Australia',
-        flag: 'flag flag-au',
+        country: "Australia",
+        flag: "flag flag-au",
         badge: 12
       },
       {
-        country: 'Tibet',
-        flag: 'flag flag-tibet',
+        country: "Tibet",
+        flag: "flag flag-tibet",
         badge: 12
       },
       {
-        country: 'Wales',
-        flag: 'flag flag-wales',
+        country: "Wales",
+        flag: "flag flag-wales",
         badge: 12
       },
       {
-        country: 'France',
-        flag: 'flag flag-fr',
+        country: "France",
+        flag: "flag flag-fr",
         badge: 12
       },
       {
-        country: 'Spain',
-        flag: 'flag flag-es',
+        country: "Spain",
+        flag: "flag flag-es",
         badge: 12
       }
     ]
@@ -48,7 +48,7 @@ class LeftMenu extends Component {
           {topLeagues.map((item, id) => {
             return (
               <li key={id}>
-                <Link to={'/match/' + id}>
+                <Link to={"/league"}>
                   {item.title}
                   <span className="badge">
                     {item.counter}
@@ -83,7 +83,7 @@ class LeftMenu extends Component {
                       aria-expanded="false"
                       aria-controls={`col-${item.country}`}
                     >
-                      <span className={item.flag} /> {item.country}{' '}
+                      <span className={item.flag} /> {item.country}{" "}
                       <span className="caret" />
                       <span className="badge">{item.badge}</span>
                     </a>
@@ -97,13 +97,13 @@ class LeftMenu extends Component {
                 >
                   <ul className="list-group">
                     <li className="list-group-item league">
-                      <Link to={'/'}>Premier League</Link>
+                      <Link to={"/"}>Premier League</Link>
                     </li>
                     <li className="list-group-item league">
-                      <Link to={'/'}>Championship</Link>
+                      <Link to={"/"}>Championship</Link>
                     </li>
                     <li className="list-group-item league">
-                      <Link to={'/'}>League One</Link>
+                      <Link to={"/"}>League One</Link>
                     </li>
                   </ul>
                 </div>

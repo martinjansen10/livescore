@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../images/logo-header.png';
-import logoTime from '../../images/icons/time.png';
-import logoSearch from '../../images/icons/search.png';
-import avatar from '../../images/icons/avatar.png';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../images/logo-header.png";
+import logoTime from "../../images/icons/time.png";
+import logoSearch from "../../images/icons/search.png";
+import avatar from "../../images/icons/avatar.png";
 
 class Header extends Component {
   render() {
@@ -12,8 +12,8 @@ class Header extends Component {
         <div className="container">
           <nav className="navbar">
             <div className="navbar-header">
-              <Link to={'/'} className="navbar-brand">
-                <img src={logo} alt="logo" />{' '}
+              <Link to={"/"} className="navbar-brand">
+                <img src={logo} alt="logo" />{" "}
                 <span className="hidden-xs">Live football</span>
               </Link>
             </div>
@@ -25,13 +25,13 @@ class Header extends Component {
                 data-target="#menu"
                 aria-expanded="false"
               >
-                <span className="sr-only">Toggle navigation</span>{' '}
-                <span className="icon-bar" /> <span className="icon-bar" />{' '}
+                <span className="sr-only">Toggle navigation</span>{" "}
+                <span className="icon-bar" /> <span className="icon-bar" />{" "}
                 <span className="icon-bar" />
               </button>
               <div
                 className="timezone visible-xs visible-sm"
-                style={{ float: 'left', marginLeft: '25%', marginTop: 10 }}
+                style={{ float: "left", marginLeft: "25%", marginTop: 10 }}
               >
                 <a>
                   <img src={logoTime} alt="logoTime" /> <span>23.8.2017</span>
@@ -60,7 +60,7 @@ class Header extends Component {
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <img src={avatar} alt="avatar" />{' '}
+                    <img src={avatar} alt="avatar" />{" "}
                     <span className="hidden-xs">My profile</span>
                   </a>
                   <ul className="dropdown-menu">

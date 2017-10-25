@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import LeftMenu from '../components/layout/LeftMenu';
-import HomeContent from '../components/Home/HomeContent';
-import RightMenu from '../components/layout/RightMenu';
-import Match from './Match';
+import React, { Component } from "react";
+import { Route } from "react-router-dom";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import LeftMenu from "../components/layout/LeftMenu";
+import HomeContent from "../components/Home/HomeContent";
+import RightMenu from "../components/layout/RightMenu";
+import Match from "./Match";
+import League from "./League";
 
 class Home extends Component {
   render() {
@@ -28,9 +29,15 @@ class Home extends Component {
               }}
             />
             <Route
-              path={`${this.props.match.url}match/:id`}
+              path={`${this.props.match.url}match`}
               render={() => {
                 return <Match />;
+              }}
+            />
+            <Route
+              path={`${this.props.match.url}league`}
+              render={() => {
+                return <League />;
               }}
             />
           </div>

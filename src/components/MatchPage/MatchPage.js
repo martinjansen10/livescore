@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import ODDS from './ODDS/ODDS';
-import './MatchPage.css';
+import React, { Component } from "react";
+import ODDS from "./ODDS/ODDS";
+import "./MatchPage.css";
 
 class MatchPage extends Component {
   render() {
