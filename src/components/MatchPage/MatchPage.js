@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ODDS from "./ODDS/ODDS";
-import "./MatchPage.css";
 
 class MatchPage extends Component {
   render() {
@@ -32,9 +31,9 @@ class MatchPage extends Component {
           </div>
         </div>
         <div className="matchPage__league">
-          <span className="matchPage__league_title">Premiere League</span>
-          <span>++</span>
-          <span>England</span>
+          <span className="matchPage__league_title_left">Premiere League</span>
+          <img src="/img/plus.png" alt="BL" className="plus" />
+          <span className="matchPage__league_title_right">England</span>
         </div>
         <div className="matchPage__odds">
           <ODDS />

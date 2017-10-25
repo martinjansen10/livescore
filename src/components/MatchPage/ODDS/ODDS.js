@@ -4,73 +4,150 @@ import "./ODDS.css";
 class ODDS extends Component {
   render() {
     return (
-      <div>
+      <div className="odds">
+        <div className="odds__header">ODDS</div>
+        <div className="odds__menu">
+          OVERALL <span style={{ "text-decoration": "underline" }}>
+            HOME
+          </span>{" "}
+          AWAY
+        </div>
         <div className="odds__table">
           <table>
-            <tbody>
+            <thead>
               <tr style={{ color: "#b6b7b7" }}>
-                <th>#</th>
-                <th>TEAM</th>
-                <th>MP</th>
-                <th style={{ color: "#49aa9e" }}>W</th>
-                <th style={{ color: "#f7c70c" }}>D</th>
-                <th style={{ color: "#49aa9e" }}>L</th>
-                <th>
-                  <img src="img/ball.png" alt="BL" />
-                </th>
-                <th>LAST 5</th>
-                <th>Pts</th>
+                <th rowspan="2">BOOKMARKER</th>
+                <th colspan="2">ASIAN HANDICAP</th>
+                <th colspan="3">1X2</th>
+              </tr>
+              <tr style={{ color: "#b6b7b7" }}>
+                <th>HOME</th>
+                <th>AWAY</th>
+                <th>HOME</th>
+                <th>DRAW</th>
+                <th>AWAY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="/img/1xbet-logo.png"
+                    alt="BL"
+                    style={{ "max-width": "90px" }}
+                  />
+                </td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  3 <span className="arrow_up" />
+                </td>
+                <td>
+                  1 <span className="arrow_up" />
+                </td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  8 <span className="arrow_down" />
+                </td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Manchester City</td>
-                <td>2</td>
-                <td>3</td>
-                <td>1</td>
-                <td>2</td>
-                <td>8:0</td>
-                <td className="last" align="center">
-                  <span>W</span>
-                  <span>D</span>
-                  <span>L</span>
-                  <span>D</span>
-                  <span>W</span>
+                <td>
+                  <img
+                    src="/img/1xbet-logo.png"
+                    alt="BL"
+                    style={{ "max-width": "90px" }}
+                  />
                 </td>
-                <td>6</td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  3 <span className="arrow_up" />
+                </td>
+                <td>
+                  1 <span className="arrow_up" />
+                </td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  8 <span className="arrow_down" />
+                </td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Manchester City</td>
-                <td>2</td>
-                <td>3</td>
-                <td>1</td>
-                <td>2</td>
-                <td>8:0</td>
-                <td className="last" align="center">
-                  <span>W</span>
-                  <span>D</span>
-                  <span>L</span>
-                  <span>D</span>
-                  <span>W</span>
+                <td>
+                  <img
+                    src="/img/1xbet-logo.png"
+                    alt="BL"
+                    style={{ "max-width": "90px" }}
+                  />
                 </td>
-                <td>6</td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  3 <span className="arrow_up" />
+                </td>
+                <td>
+                  1 <span className="arrow_up" />
+                </td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  8 <span className="arrow_down" />
+                </td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Manchester City</td>
-                <td>2</td>
-                <td>3</td>
-                <td>1</td>
-                <td>2</td>
-                <td>8:0</td>
-                <td className="last" align="center">
-                  <span>W</span>
-                  <span>D</span>
-                  <span>L</span>
-                  <span>D</span>
-                  <span>W</span>
+                <td>
+                  <img
+                    src="/img/1xbet-logo.png"
+                    alt="BL"
+                    style={{ "max-width": "90px" }}
+                  />
                 </td>
-                <td>6</td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  3 <span className="arrow_up" />
+                </td>
+                <td>
+                  1 <span className="arrow_up" />
+                </td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  8 <span className="arrow_down" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="/img/1xbet-logo.png"
+                    alt="BL"
+                    style={{ "max-width": "90px" }}
+                  />
+                </td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  3 <span className="arrow_up" />
+                </td>
+                <td>
+                  1 <span className="arrow_up" />
+                </td>
+                <td>
+                  2 <span className="arrow_down" />
+                </td>
+                <td>
+                  8 <span className="arrow_down" />
+                </td>
               </tr>
             </tbody>
           </table>
