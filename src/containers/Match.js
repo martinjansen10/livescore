@@ -13,7 +13,7 @@ class Match extends Component {
       <div>
         <div id="content">
           <MatchPage />
-          {/* <LeaguePage /> */}
+          <LeaguePage />
         </div>
         <RightSidebar />
       </div>
