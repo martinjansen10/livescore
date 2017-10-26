@@ -4,7 +4,7 @@ import LeagueStandings from "./LeagueStandings/LeagueStandings";
 import MatchList from "../MatchList/MatchList";
 import "./LeaguePage.css";
 
-import matches from "../../seeds/MatchesSeed";
+import { matches, matches2, matches3 } from "../../seeds/MatchesSeed";
 
 export default class LeaguePage extends Component {
   render() {
@@ -17,13 +17,13 @@ export default class LeaguePage extends Component {
           <LeagueStandings />
         </div>
         <div className="leaguePage__day">
-          <MatchList title="Matches of the day" matches={matches} />
+          <MatchList title="Matches of the day" matches={matches} tabs={true} />
         </div>
         <div className="leaguePage__latest">
-          <MatchList title="Latest matches" matches={matches} />
+          <MatchList title="Latest matches" matches={matches2} />
         </div>
         <div className="leaguePage__scheduled">
-          <MatchList title="Scheduled matches" matches={matches} />
+          <MatchList title="Scheduled matches" matches={matches3} />
         </div>
       </div>
     );

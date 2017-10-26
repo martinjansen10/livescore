@@ -8,11 +8,27 @@ const LeaguePageHeader = () => {
         <div className="leaguePageHeader__logo">
           <img src="/img/league-emblem.png" alt="" />
         </div>
-        <div className="leaguePageHeader__title">
-          <div>Premiere League</div>
-          <span>++</span>
-          <span>England</span>
-          <div className="leaguePageHeader__dropdown">17/18</div>
+        <div className="leaguePageHeader__title match-league">
+          <h2>Premiere League</h2>
+          <span className="flag flag-england" />
+          <span className="league">England</span>
+          <div
+            className="leaguePageHeader__dropdown"
+            style={{ position: "relative" }}
+          >
+            <select className="select-league-date">
+              <option>17/18</option>
+            </select>
+            <span
+              className="caret"
+              style={{
+                left: "100px",
+                position: "absolute",
+                left: "46px",
+                bottom: "15px"
+              }}
+            />
+          </div>
         </div>
         <div className="leaguePageHeader__follow">
           <span>FOLLOW</span>

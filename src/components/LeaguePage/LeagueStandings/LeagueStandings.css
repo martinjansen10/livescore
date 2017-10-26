@@ -1,36 +1,70 @@
 .leagueStandings {
-    padding: 5px 0px;
+  padding: 5px 0px;
 }
 
 .leagueStandings__header {
-    border-bottom: 2px solid #ebf1ef;
-    text-align: center;
-    height: 11px;
-    margin-bottom: 8px;
+  border-bottom: 2px solid #ebf1ef;
+  text-align: center;
+  height: 11px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.leagueStandings__header span {
+  background: #fff;
+  padding: 0 5px;
 }
 
 .leagueStandings__menu {
-    color: #49aa9e;
-    font-size: 9pt;
-    text-align: center;
-    margin-bottom: 8px;
+  color: #49aa9e;
+  font-size: 9pt;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.leagueStandings__menu a {
+  color: #49aa9e;
 }
 
 .leagueStandings__table > table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.leagueStandings__table  td, .leagueStandings__table  th {
-   text-align: center;
-   border: 1px solid #eaf0ee;
+.leagueStandings__table td,
+.leagueStandings__table th {
+  text-align: center;
+  border: 1px solid #eaf0ee;
+  padding: 8px 4px;
+  font-weight: normal;
+  font-size: 12px;
+  background: #f9fbfa;
 }
 
-.last  span {
-    margin: 0px 3px;
-    background-color: #49aa9e;
-    color: #fff;
-    display: inline-block;
-    padding: 2px;
+.leagueStandings__table td {
+  background: #ffffff;
+}
+
+.last span {
+  margin: 0px 3px;
+  background-color: #49aa9e;
+  color: #fff;
+  display: inline-block;
+  padding: 1px 0 !important;
+  font-size: 12px !important;
+  width: 19px;
+}
+
+.win-w {
+  background-color: #4aaa9e !important;
+}
+
+.draw-d {
+  background-color: #f7c70f !important;
+}
+
+.lose-l {
+  background-color: #dc6d52 !important;
 }

@@ -1,56 +1,81 @@
 .leaguePageHeader__head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
 }
 .leaguePageHeader__logo {
-    width: 80px;
+  width: 80px;
 }
 .leaguePageHeader__title {
-    padding-top: 10px;
-    padding-left: 20px;
-    width: 230px;
-    color: #202121;
-    font-size: 14pt;
-    font-weight: 600;
-    width: 100%;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 230px;
+  color: #202121;
+  font-weight: 600;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 5px;
+  border: none;
+}
+.leaguePageHeader__title h2 {
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 230px;
+  color: #202121;
+  font-size: 14pt;
+  font-weight: 600;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .leaguePageHeader__title > span {
-    font-size: 12pt;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .leaguePageHeader__dropdown {
-    font-size: 9pt;
-    color: #ababab;
+  font-size: 9pt;
+  color: #ababab;
 }
 .leaguePageHeader__follow {
-    width: 120px;
-    height: 34px;
-    border: 2px solid #49aa9e;
-    text-align: center;
-    padding-top: 6px;
-    color: #49aa9e;
+  width: 180px;
+  height: 30px;
+  border: 2px solid #49aa9e;
+  text-align: center;
+  padding-top: 4px;
+  color: #49aa9e;
+  font-size: 12px;
 }
 .leaguePageHeader__progess {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  font-size: 11px;
 }
 .leaguePageHeader__bar {
-    width: 350px;
-    height: 4px;
-    background-color: #b1b1b1;
-    margin: 0 10px;
+  width: 350px;
+  height: 4px;
+  background-color: #b1b1b1;
+  margin: 0 10px;
 }
 
 .leaguePageHeader__bar-bg {
-    width: 24%;
-    background-color: #49aa9e;
-    height: 4px;
+  width: 24%;
+  background-color: #49aa9e;
+  height: 4px;
+}
+
+.select-league-date {
+  background: #fff;
+  -webkit-border-radius: 2px;
+  width: 65px;
+  height: 30px;
+  border-color: #d1d1d1;
+  color: #c1c1c1;
+  padding-left: 10px;
+  -webkit-appearance: none;
 }
