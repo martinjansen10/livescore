@@ -1,3 +1,71 @@
 .rightSidebar {
-    text-align: center;
+  text-align: center;
+}
+
+.rightSidebar #menu {
+  background: #f5f7f6;
+}
+
+.rightSidebar .headline {
+  text-align: left;
+}
+
+.rightSidebar ul li {
+  margin-bottom: 10px;
+  border: none;
+}
+
+.rightSidebar ul li:after {
+  border: none !important;
+}
+
+.rightSidebar ul li a {
+  text-align: left;
+}
+
+.rightSidebar .panel a {
+  text-align: left;
+}
+
+.rightSidebar .r-search {
+  width: 90%;
+  background: transparent;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+.rightSidebar .r-search::-webkit-input-placeholder {
+  color: #aaacab;
+}
+
+.rightSidebar .r-pts .badge {
+  float: none;
+  display: block;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+.rightSidebar .r-pts {
+  float: right;
+}
+
+.rightSidebar .nav-countries .league a:before {
+  display: none !important;
+  width: 0px;
+  height: 0px;
+}
+.y-card,
+.r-card {
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  margin-left: 5px;
+  background: #f7c70b;
+  float: left;
+}
+
+.r-card {
+  background: #dc6d52;
 }
