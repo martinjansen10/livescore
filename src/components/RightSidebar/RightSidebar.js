@@ -2,12 +2,35 @@ import React, { Component } from "react";
 import "./RightSidebar.css";
 import ads from "../../images/ads-250x250.jpg";
 import player from "../../images/icons/player.png";
+import star from "../../images/icons/star.png";
+import goals from "../../images/icons/goals.png";
+import assist from "../../images/icons/assist.png";
+import time from "../../images/icons/time.png";
+import isearch from "../../images/icons/i-search.png";
 import { Link } from "react-router-dom";
 
 import topLeagues from "../../seeds/topLeagues";
 
 class RightSidebar extends Component {
   state = {
+    players: [
+      {
+        id: 1,
+        name: "Anthony Pilars"
+      },
+      {
+        id: 2,
+        name: "Ernest Wickens"
+      },
+      {
+        id: 3,
+        name: "Witary Monrow"
+      },
+      {
+        id: 4,
+        name: "Philip Monrow"
+      }
+    ],
     countries: [
       {
         country: "England",
@@ -44,109 +67,121 @@ class RightSidebar extends Component {
 
   render() {
     return (
-      <div className="rightSidebar">
-        <div id="menu" className="collapse navbar-collapse">
+      <div id="sidebar" className="rightSidebar">
+        <div id="menu" className="rightMenu">
           <span className="headline">Fantasy Scores</span>
           <ul className="nav nav-topliagues">
             <li>
+              <select className="r-select">
+                <option>Provider: EPL</option>
+              </select>
+            </li>
+            <li style={{ position: "relative" }}>
               <input
                 type="text"
                 className="r-search"
                 placeHolder="Player search..."
               />
-            </li>
-            <li>
-              <input
-                type="text"
-                className="r-search"
-                placeHolder="Player search..."
+              <img
+                src={isearch}
+                width="15"
+                style={{ position: "absolute", right: "20px", top: "5px" }}
               />
             </li>
           </ul>
+          <span className="headline-top">
+            <img src={star} width="15" style={{ marginTop: "-3px" }} />&nbsp;TOP
+            PLAYERS
+          </span>
           <span className="headline">
             # PLAYER <span style={{ float: "right" }}>Pts</span>
           </span>
           <ul className="nav nav-countries">
-            <div
-              key="1"
-              className="panel-group"
-              id="accordion"
-              role="tablist"
-              aria-multiselectable="true"
-            >
-              <div className="panel panel-default">
-                <div className="panel-heading" role="tab" id="headingOne">
-                  <span className="panel-title">
-                    <a
-                      role="button"
-                      data-toggle="collapse"
-                      data-parent="#accordion"
-                      href={`#col-1`}
-                      aria-expanded="false"
-                      aria-controls={`col-1`}
-                    >
-                      <span style={{ marginRight: "10px" }}>1</span>
-                      <img
-                        src={player}
-                        width="40"
-                        style={{ marginRight: "10px" }}
-                      />
-                      <span>Anthony Pilars</span>
-                      <div className="r-pts">
-                        <span className="badge">122</span>
-                        <span className="caret" />
-                      </div>
-                    </a>
-                  </span>
-                </div>
-                <div
-                  id={`col-1`}
-                  className="panel-collapse collapse"
-                  role="tabpanel"
-                  aria-labelledby="headingOne"
-                >
-                  <ul className="list-group">
-                    <li className="list-group-item league">
-                      <Link to={"/"}>
-                        GOALS<span className="badge">12</span>
-                      </Link>
-                    </li>
-                    <li className="list-group-item league">
-                      <Link to={"/"}>
-                        PENALTY GOALS<span className="badge">3</span>
-                      </Link>
-                    </li>
-                    <li className="list-group-item league">
-                      <Link to={"/"}>
-                        FREEKICK GOALS<span className="badge">3</span>
-                      </Link>
-                    </li>
-                    <li className="list-group-item league">
-                      <Link to={"/"}>
-                        ASSISTS<span className="badge">3</span>
-                      </Link>
-                    </li>
-                    <li className="list-group-item league">
-                      <Link to={"/"}>
-                        TOTAL MINUTES<span className="badge">345`</span>
-                      </Link>
-                    </li>
-                    <li className="list-group-item league">
-                      <Link to={"/"}>
-                        CARDS<span className="badge">
-                          <span style={{ float: "left" }}>23</span>
-                          <i className="y-card" />
-                          <span style={{ float: "left", marginLeft: "5px" }}>
-                            23
+            {this.state.players.map(item => (
+              <div
+                key="1"
+                className="panel-group"
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                <div className="panel panel-default">
+                  <div className="panel-heading" role="tab" id="headingOne">
+                    <span className="panel-title">
+                      <a
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href={`#col-${item.id}`}
+                        aria-expanded="false"
+                        aria-controls={`col-${item.id}`}
+                      >
+                        <span style={{ marginRight: "10px" }}>1</span>
+                        <img
+                          src={player}
+                          width="40"
+                          style={{ marginRight: "10px" }}
+                        />
+                        <span>{item.name}</span>
+                        <div className="r-pts">
+                          <span className="badge">122</span>
+                          <span className="caret" />
+                        </div>
+                      </a>
+                    </span>
+                  </div>
+                  <div
+                    id={`col-${item.id}`}
+                    className="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="headingOne"
+                  >
+                    <ul className="list-group">
+                      <li className="list-group-item league">
+                        <Link to={"/"}>
+                          GOALS&nbsp;<img width="20" src={goals} />
+                          <span className="badge">12</span>
+                        </Link>
+                      </li>
+                      <li className="list-group-item league">
+                        <Link to={"/"}>
+                          PENALTY GOALS<span className="badge">3</span>
+                        </Link>
+                      </li>
+                      <li className="list-group-item league">
+                        <Link to={"/"}>
+                          FREEKICK GOALS<span className="badge">3</span>
+                        </Link>
+                      </li>
+                      <li className="list-group-item league">
+                        <Link to={"/"}>
+                          ASSISTS&nbsp;<img width="20" src={assist} />
+                          <span className="badge">3</span>
+                        </Link>
+                      </li>
+                      <li className="list-group-item league">
+                        <Link to={"/"}>
+                          TOTAL MINUTES&nbsp;<img width="15" src={time} />
+                          <span className="badge">345`</span>
+                        </Link>
+                      </li>
+                      <li className="list-group-item league">
+                        <Link to={"/"}>
+                          CARDS<span className="badge">
+                            <span style={{ float: "left" }}>23</span>
+                            <i className="y-card" />
+                            <span style={{ float: "left", marginLeft: "5px" }}>
+                              23
+                            </span>
+                            <i className="r-card" />
                           </span>
-                          <i className="r-card" />
-                        </span>
-                      </Link>
-                    </li>
-                  </ul>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </ul>
         </div>
         {/* <img src="/img/ads-right-250-360.png" alt="ads-right" />

@@ -6,13 +6,34 @@
   background: #f5f7f6;
 }
 
+.rightSidebar .nav-countries {
+  background-color: #f5f7f6 !important;
+}
+
+.rightSidebar #menu .nav-countries .panel-title a[aria-expanded="true"] {
+  background-color: #f5f7f6 !important;
+  border-left: none;
+}
+
 .rightSidebar .headline {
   text-align: left;
+}
+
+.rightSidebar #menu .nav-countries .panel .list-group .list-group-item a {
+  background: #f5f7f6;
+}
+
+.rightSidebar #menu .nav-countries .panel .list-group .list-group-item {
+  border-left: none;
 }
 
 .rightSidebar ul li {
   margin-bottom: 10px;
   border: none;
+}
+
+.rightSidebar .league .badge {
+  background: transparent !important;
 }
 
 .rightSidebar ul li:after {
@@ -21,6 +42,7 @@
 
 .rightSidebar ul li a {
   text-align: left;
+  color: #ababab !important;
 }
 
 .rightSidebar .panel a {
@@ -34,6 +56,25 @@
   padding: 5px 10px;
   color: #999;
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .rightSidebar .rightMenu {
+    width: 100% !important;
+    min-height: auto !important;
+  }
+}
+
+.rightSidebar .r-select {
+  width: 90%;
+  background: transparent;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  color: #999;
+  font-size: 12px;
+  height: 30px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 
 .rightSidebar .r-search::-webkit-input-placeholder {
