@@ -8,7 +8,6 @@ class Match extends Component {
   render() {
     let item = this.props.item;
     let key = this.props.key;
-    console.log(item);
     return (
       <div className="match-wrap">
         <div

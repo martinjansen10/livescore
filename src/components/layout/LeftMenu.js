@@ -40,14 +40,35 @@ class LeftMenu extends Component {
     ]
   };
 
+  componentDidMount() {
+    let width = window.innerWidth;
+    const self = this;
+    this.setState({
+      width: window.innerWidth
+    });
+    window.onresize = function(event) {
+      self.setState({
+        width: window.innerWidth
+      });
+    };
+  }
+
+  handleClickLink = e => {
+    const i = document.getElementById("btn-toggle");
+    i.click();
+  };
+
   render() {
     return (
-      <div id="menu" className="collapse navbar-collapse">
+      <div
+        id="menu"
+        className={this.state.width > 762 ? "" : "collapse navbar-collapse"}
+      >
         <span className="headline">Top Leagues</span>
         <ul className="nav nav-topliagues">
           {topLeagues.map((item, id) => {
             return (
-              <li key={id}>
+              <li key={id} onClick={this.handleClickLink}>
                 <Link to={"/league"}>
                   {item.title}
                   <span className="badge">
@@ -63,7 +84,7 @@ class LeftMenu extends Component {
           <img src={ads} alt="" />
         </div>
         <span className="headline">Countries</span>
-        <ul className="nav nav-countries">
+        <ul id="nvcountries" className="nav nav-countries">
           {this.state.countries.map((item, id) => (
             <div
               key={id}
@@ -97,13 +118,13 @@ class LeftMenu extends Component {
                 >
                   <ul className="list-group">
                     <li className="list-group-item league">
-                      <Link to={"/"}>Premier League</Link>
+                      <Link to={"/league"}>Premier League</Link>
                     </li>
                     <li className="list-group-item league">
-                      <Link to={"/"}>Championship</Link>
+                      <Link to={"/league"}>Championship</Link>
                     </li>
                     <li className="list-group-item league">
-                      <Link to={"/"}>League One</Link>
+                      <Link to={"/league"}>League One</Link>
                     </li>
                   </ul>
                 </div>

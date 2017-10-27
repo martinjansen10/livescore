@@ -24,6 +24,7 @@ class Header extends Component {
                 data-toggle="collapse"
                 data-target="#menu"
                 aria-expanded="false"
+                id="btn-toggle"
               >
                 <span className="sr-only">Toggle navigation</span>{" "}
                 <span className="icon-bar" /> <span className="icon-bar" />{" "}

@@ -47,6 +47,7 @@ class Home extends Component {
                 return <League />;
               }}
             />
+            <div style={{ clear: "both" }} />
           </div>
         </section>
         <br />
