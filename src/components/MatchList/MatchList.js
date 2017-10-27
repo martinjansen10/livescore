@@ -45,7 +45,7 @@ class MatchList extends Component {
           {this.props.matches.map(item => {
             return (
               <li key={item.id} className="matchList__listItem">
-                <Match item={item} />
+                <Match key={item.id} item={item} />
               </li>
             );
           })}

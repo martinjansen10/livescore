@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     const { appState } = this.props;
     return (
-      <div className="wrapper">
+      <div>
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/league" component={Home} />

@@ -7,6 +7,7 @@ import goals from "../../images/icons/goals.png";
 import assist from "../../images/icons/assist.png";
 import time from "../../images/icons/time.png";
 import isearch from "../../images/icons/i-search.png";
+import team from "../../images/icons/team.png";
 import { Link } from "react-router-dom";
 
 import topLeagues from "../../seeds/topLeagues";
@@ -97,9 +98,9 @@ class RightSidebar extends Component {
             # PLAYER <span style={{ float: "right" }}>Pts</span>
           </span>
           <ul className="nav nav-countries">
-            {this.state.players.map(item => (
+            {this.state.players.map((item, idx) => (
               <div
-                key="1"
+                key={idx}
                 className="panel-group"
                 id="accordion"
                 role="tablist"
@@ -116,7 +117,7 @@ class RightSidebar extends Component {
                         aria-expanded="false"
                         aria-controls={`col-${item.id}`}
                       >
-                        <span style={{ marginRight: "10px" }}>1</span>
+                        <span style={{ marginRight: "10px" }}>{idx + 1}</span>
                         <img
                           src={player}
                           width="40"
@@ -136,10 +137,18 @@ class RightSidebar extends Component {
                     role="tabpanel"
                     aria-labelledby="headingOne"
                   >
+                    <div className="team-stats">
+                      <p>
+                        <img src={team} width="15" />&nbsp;Beast team
+                      </p>
+                      <p>
+                        <img src={team} width="15" />&nbsp;English top team
+                      </p>
+                    </div>
                     <ul className="list-group">
                       <li className="list-group-item league">
                         <Link to={"/"}>
-                          GOALS&nbsp;<img width="20" src={goals} />
+                          GOALS&nbsp;<img width="17" src={goals} />
                           <span className="badge">12</span>
                         </Link>
                       </li>
@@ -155,13 +164,13 @@ class RightSidebar extends Component {
                       </li>
                       <li className="list-group-item league">
                         <Link to={"/"}>
-                          ASSISTS&nbsp;<img width="20" src={assist} />
+                          ASSISTS&nbsp;<img width="17" src={assist} />
                           <span className="badge">3</span>
                         </Link>
                       </li>
                       <li className="list-group-item league">
                         <Link to={"/"}>
-                          TOTAL MINUTES&nbsp;<img width="15" src={time} />
+                          TOTAL MINUTES&nbsp;&nbsp;<img width="13" src={time} />
                           <span className="badge">345`</span>
                         </Link>
                       </li>

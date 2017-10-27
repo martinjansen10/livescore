@@ -41,7 +41,9 @@ const LeagueStandings = () => {
                 <tr>
                   <td>1</td>
                   <td>
-                    <img src={mcity} />&nbsp;Manchester City
+                    <img src={mcity} />&nbsp;
+                    <span className="hidden-xs">Manchester City</span>
+                    <span className="visible-xs">MNC</span>
                   </td>
                   <td>2</td>
                   <td>3</td>
@@ -51,16 +53,18 @@ const LeagueStandings = () => {
                   <td className="last" align="center">
                     <span className="win-w">W</span>
                     <span className="draw-d">D</span>
-                    <span className="lose-l">L</span>
-                    <span className="draw-d">D</span>
-                    <span className="win-w">W</span>
+                    <span className="hidden-xs lose-l">L</span>
+                    <span className="hidden-xs draw-d">D</span>
+                    <span className="hidden-xs win-w">W</span>
                   </td>
                   <td>6</td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>
-                    <img src={mcity} />&nbsp;Manchester City
+                    <img src={mcity} />&nbsp;
+                    <span className="hidden-xs">Manchester City</span>
+                    <span className="visible-xs">MNC</span>
                   </td>
                   <td>2</td>
                   <td>3</td>
@@ -70,16 +74,18 @@ const LeagueStandings = () => {
                   <td className="last" align="center">
                     <span className="win-w">W</span>
                     <span className="draw-d">D</span>
-                    <span className="lose-l">L</span>
-                    <span className="draw-d">D</span>
-                    <span className="win-w">W</span>
+                    <span className="hidden-xs lose-l">L</span>
+                    <span className="hidden-xs draw-d">D</span>
+                    <span className="hidden-xs win-w">W</span>
                   </td>
                   <td>6</td>
                 </tr>
                 <tr>
                   <td>3</td>
                   <td>
-                    <img src={mcity} />&nbsp;Manchester City
+                    <img src={mcity} />&nbsp;
+                    <span className="hidden-xs">Manchester City</span>
+                    <span className="visible-xs">MNC</span>
                   </td>
                   <td>2</td>
                   <td>3</td>
@@ -89,16 +95,18 @@ const LeagueStandings = () => {
                   <td className="last" align="center">
                     <span className="win-w">W</span>
                     <span className="draw-d">D</span>
-                    <span className="lose-l">L</span>
-                    <span className="draw-d">D</span>
-                    <span className="win-w">W</span>
+                    <span className="hidden-xs lose-l">L</span>
+                    <span className="hidden-xs draw-d">D</span>
+                    <span className="hidden-xs win-w">W</span>
                   </td>
                   <td>6</td>
                 </tr>
                 <tr>
                   <td>4</td>
                   <td>
-                    <img src={mcity} />&nbsp;Manchester City
+                    <img src={mcity} />&nbsp;
+                    <span className="hidden-xs">Manchester City</span>
+                    <span className="visible-xs">MNC</span>
                   </td>
                   <td>2</td>
                   <td>3</td>
@@ -108,16 +116,18 @@ const LeagueStandings = () => {
                   <td className="last" align="center">
                     <span className="win-w">W</span>
                     <span className="draw-d">D</span>
-                    <span className="lose-l">L</span>
-                    <span className="draw-d">D</span>
-                    <span className="win-w">W</span>
+                    <span className="hidden-xs lose-l">L</span>
+                    <span className="hidden-xs draw-d">D</span>
+                    <span className="hidden-xs win-w">W</span>
                   </td>
                   <td>6</td>
                 </tr>
                 <tr>
                   <td>5</td>
                   <td>
-                    <img src={mcity} />&nbsp;Manchester City
+                    <img src={mcity} />&nbsp;
+                    <span className="hidden-xs">Manchester City</span>
+                    <span className="visible-xs">MNC</span>
                   </td>
                   <td>2</td>
                   <td>3</td>
@@ -127,9 +137,9 @@ const LeagueStandings = () => {
                   <td className="last" align="center">
                     <span className="win-w">W</span>
                     <span className="draw-d">D</span>
-                    <span className="lose-l">L</span>
-                    <span className="draw-d">D</span>
-                    <span className="win-w">W</span>
+                    <span className="hidden-xs lose-l">L</span>
+                    <span className="hidden-xs draw-d">D</span>
+                    <span className="hidden-xs win-w">W</span>
                   </td>
                   <td>6</td>
                 </tr>

@@ -57,14 +57,35 @@
   width: 19px;
 }
 
-.win-w {
+@media (max-width: 767px) {
+  .leagueStandings .visible-xs {
+    display: inline-block !important;
+  }
+}
+
+.last .win-w {
   background-color: #4aaa9e !important;
+  width: 18px !important;
+  height: 18px;
+  margin-right: 0 !important;
+  font-size: 11px !important;
+  display: inline-block;
 }
 
 .draw-d {
   background-color: #f7c70f !important;
+  width: 18px !important;
+  height: 18px;
+  margin-right: 0 !important;
+  font-size: 11px !important;
+  display: inline-block;
 }
 
 .lose-l {
   background-color: #dc6d52 !important;
+  width: 18px !important;
+  height: 18px;
+  margin-right: 0 !important;
+  font-size: 11px !important;
+  display: inline-block;
 }
