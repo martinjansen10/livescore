@@ -4,7 +4,7 @@ import TeamStandings from "./TeamStandings/TeamStandings";
 import MatchList from "../MatchList/MatchList";
 import ScheduleList from "./ScheduleList";
 import PlayerList from "./PlayerList";
-import "./LeaguePage.css";
+import "./TeamPage.css";
 
 import { matches, matches2, matches3 } from "../../seeds/MatchesSeed";
 
