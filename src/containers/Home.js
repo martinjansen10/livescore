@@ -7,6 +7,7 @@ import HomeContent from "../components/Home/HomeContent";
 import RightMenu from "../components/layout/RightMenu";
 import Match from "./Match";
 import League from "./League";
+import Team from "./Team";
 import MatchDetail from "./MatchDetail";
 
 class Home extends Component {
@@ -45,6 +46,12 @@ class Home extends Component {
               path={`${this.props.match.url}league`}
               render={() => {
                 return <League />;
+              }}
+            />
+            <Route
+              path={`${this.props.match.url}team`}
+              render={() => {
+                return <Team />;
               }}
             />
             <div style={{ clear: "both" }} />

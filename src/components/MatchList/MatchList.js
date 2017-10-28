@@ -13,35 +13,36 @@ class MatchList extends Component {
         >
           <span>{this.props.title}</span>
         </div>
-        {this.props.tabs && (
-          <div
-            className="leagueStandings__menu"
-            role="tablist"
-            style={{ marginBottom: "12px" }}
-          >
-            <a href="#all" aria-controls="all" role="tab" data-toggle="tab">
-              ALL
-            </a>&nbsp;&nbsp;
-            <a href="#live" aria-controls="live" role="tab" data-toggle="tab">
-              LIVE
-            </a>{" "}
-            &nbsp;&nbsp;
-            <a
-              href="#finished"
-              aria-controls="finished"
-              role="tab"
-              data-toggle="tab"
+        {this.props.tabs &&
+          !this.props.team && (
+            <div
+              className="leagueStandings__menu"
+              role="tablist"
+              style={{ marginBottom: "12px" }}
             >
-              FINISHED
-            </a>
-          </div>
-        )}
+              <a href="#all" aria-controls="all" role="tab" data-toggle="tab">
+                ALL
+              </a>&nbsp;&nbsp;
+              <a href="#live" aria-controls="live" role="tab" data-toggle="tab">
+                LIVE
+              </a>{" "}
+              &nbsp;&nbsp;
+              <a
+                href="#finished"
+                aria-controls="finished"
+                role="tab"
+                data-toggle="tab"
+              >
+                FINISHED
+              </a>
+            </div>
+          )}
         {!this.props.tabs && (
           <p className="round-header">
             Round 2<span className="caret" />
           </p>
         )}
-        <ul className="matchList">
+        <ul className="matchList" style={{ marginTop: "20px" }}>
           {this.props.matches.map(item => {
             return (
               <li key={item.id} className="matchList__listItem">
