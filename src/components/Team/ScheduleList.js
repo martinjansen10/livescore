@@ -33,11 +33,16 @@ class ScheduleList extends Component {
                       style={{ width: "59px", marginTop: "3px" }}
                     >
                       23.08 20:45
-                      <span className="match-finished visible-xs">
-                        Finished
+                      <span className="match-expected visible-xs">
+                        <img
+                          src={require("../../images/icons/time-expected.png")}
+                        />&nbsp;1d 2h 34m
                       </span>
                     </div>
-                    <div className="match-clubs teampage-match">
+                    <div
+                      className="match-clubs teampage-match"
+                      style={{ width: "calc(96% - 159px)" }}
+                    >
                       <div className="match-club-first">
                         <div className="match-club ">
                           <div className="match-club-wrap">
@@ -73,9 +78,17 @@ class ScheduleList extends Component {
                     <div className="match-detail-button" />
                     <div
                       className="match-date"
-                      style={{ marginLeft: "26px", marginTop: "3px" }}
+                      style={{
+                        marginLeft: "26px",
+                        marginTop: "3px",
+                        width: "70px"
+                      }}
                     >
-                      <span className="match-finished hidden-xs">Finished</span>
+                      <span className="match-expected hidden-xs">
+                        <img
+                          src={require("../../images/icons/time-expected.png")}
+                        />&nbsp;1d 2h 34m
+                      </span>
                     </div>
                   </div>
                   <div

@@ -1,5 +1,5 @@
 import React from "react";
-import "./LeaguePageHeader.css";
+import "./TeamPageHeader.css";
 
 const LeaguePageHeader = () => {
   return (
@@ -8,7 +8,7 @@ const LeaguePageHeader = () => {
         <div className="leaguePageHeader__logo">
           <img src="/img/manchester-big-club-emblem.png" alt="" />
         </div>
-        <div className="leaguePageHeader__title match-league">
+        <div className="leaguePageHeader__title match-league team-page">
           <h2>Manchester City</h2>
           <div
             className="leaguePageHeader__dropdown"
@@ -19,11 +19,11 @@ const LeaguePageHeader = () => {
               style={{ marginTop: "10px" }}
             >
               <option>17/18</option>
-            </select>
-            <div className="last" style={{ display: "inline-block" }}>
-              <span className="hidden-xs lose-l">L</span>
-              <span className="hidden-xs draw-d">D</span>
-              <span className="hidden-xs win-w">W</span>
+            </select>&nbsp;&nbsp;
+            <div style={{ display: "inline-block" }}>
+              <img src={require("../../../images/icons/W.png")} />&nbsp;&nbsp;<span>12</span>&nbsp;&nbsp;
+              <img src={require("../../../images/icons/L.png")} />&nbsp;&nbsp;<span>8</span>&nbsp;&nbsp;
+              <img src={require("../../../images/icons/D.png")} />&nbsp;&nbsp;<span>4</span>&nbsp;&nbsp;
             </div>
             <span
               className="caret"

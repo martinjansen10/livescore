@@ -9,8 +9,27 @@ import time from "../../images/icons/time.png";
 //import Match from "./Match/Match";
 
 //import "./MatchList.css";
-
 class PlayerList extends Component {
+  state = {
+    playerList: [
+      {
+        name: ""
+      },
+      {
+        name: ""
+      },
+      {
+        name: ""
+      },
+      {
+        name: ""
+      },
+      {
+        name: ""
+      }
+    ]
+  };
+
   render() {
     return (
       <div>
@@ -46,43 +65,57 @@ class PlayerList extends Component {
                 <th>
                   <i className="r-card" />
                 </th>
-                <th />
-                <th />
-              </tr>
-              <tr>
-                <td style={{ textAlign: "left" }}>
+                <th>
                   <img
-                    src={require("../../images/icons/player-team.png")}
-                    width="40"
-                  />&nbsp;
-                  <div
-                    style={{
-                      float: "right",
-                      marginLeft: "-20px",
-                      marginRight: "10px"
-                    }}
-                  >
-                    <span className="hidden-xs">Hugo Lloris</span>
-                    <br />
-                    <span className="position-txt">Goalkeeper</span>
-                  </div>
-                </td>
-                <td>1</td>
-                <td>
-                  <span className="flag flag-fr" />
-                </td>
-                <td>24</td>
-                <td>1</td>
-                <td>2</td>
-                <td>8</td>
-                <td className="last" align="center">
-                  2
-                </td>
-                <td>6</td>
-                <td>6</td>
-                <td>6</td>
-                <td>6</td>
+                    width="15"
+                    src={require("../../images/icons/refresh_blue.png")}
+                    alt="BL"
+                  />
+                </th>
+                <th>
+                  <img
+                    width="15"
+                    src={require("../../images/icons/refresh_red.png")}
+                    alt="BL"
+                  />
+                </th>
               </tr>
+              {this.state.playerList.map(item => (
+                <tr>
+                  <td style={{ textAlign: "left" }}>
+                    <img
+                      src={require("../../images/icons/player-team.png")}
+                      width="40"
+                    />&nbsp;
+                    <div
+                      style={{
+                        float: "right",
+                        marginLeft: "-20px",
+                        marginRight: "10px"
+                      }}
+                    >
+                      <span className="hidden-xs">Hugo Lloris</span>
+                      <br />
+                      <span className="position-txt">Goalkeeper</span>
+                    </div>
+                  </td>
+                  <td>1</td>
+                  <td>
+                    <span className="flag flag-fr" />
+                  </td>
+                  <td>24</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>8</td>
+                  <td className="last" align="center">
+                    2
+                  </td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
