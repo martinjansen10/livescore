@@ -28,6 +28,21 @@ class TeamRightSidebar extends Component {
         name: "Witary Monrow"
       }
     ],
+    playersGk: [
+      {
+        id: 1,
+        name: "Anthony Pilars",
+        captain: true
+      },
+      {
+        id: 2,
+        name: "Ernest Wickens"
+      },
+      {
+        id: 3,
+        name: "Witary Monrow"
+      }
+    ],
     countries: [
       {
         country: "England",
@@ -98,7 +113,7 @@ class TeamRightSidebar extends Component {
                     marginRight: "10px"
                   }}
                 >
-                  <span className="hidden-xs">Player Name</span>
+                  <span>Player Name</span>
                   <br />
                   <i className="flag flag-england" />&nbsp;&nbsp;
                   <span className="position-txt" style={{ fontSize: "13px" }}>
@@ -132,7 +147,7 @@ class TeamRightSidebar extends Component {
             GOALKEEPERS <span style={{ float: "right" }}>Pts</span>
           </span>
           <ul className="nav nav-countries">
-            {this.state.players.map((item, idx) => (
+            {this.state.playersGk.map((item, idx) => (
               <div key={idx} id="accordion">
                 <div>
                   <div
@@ -142,20 +157,39 @@ class TeamRightSidebar extends Component {
                   >
                     <span className="panel-title">
                       <a role="button" href={`#col-${item.id}`}>
-                        <img
-                          src={require("../../images/icons/uniform1.png")}
-                          width="40"
-                          style={{ marginRight: "10px", float: "left" }}
-                        />
+                        {item.captain && (
+                          <img
+                            src={require("../../images/icons/goalkeeper.png")}
+                            width="35"
+                            style={{ marginRight: "10px", float: "left" }}
+                          />
+                        )}
+                        {!item.captain && (
+                          <img
+                            src={require("../../images/icons/uniform1.png")}
+                            width="40"
+                            style={{ marginRight: "10px", float: "left" }}
+                          />
+                        )}
                         <div
                           style={{
                             float: "left",
                             marginRight: "10px"
                           }}
                         >
-                          <span className="hidden-xs">Hugo Lloris</span>
+                          <span className="hidden-xs">
+                            {item.name}
+                          </span>&nbsp;&nbsp;
+                          {item.captain && (
+                            <img src={require("../../images/icons/c.png")} />
+                          )}
                           <br />
-                          <span className="position-txt">Goalkeeper</span>
+                          <span
+                            className="position-txt"
+                            style={{ display: "block", textAlign: "left" }}
+                          >
+                            Goalkeeper
+                          </span>
                         </div>
                         <div className="r-pts">
                           <span className="badge">122</span>
@@ -183,7 +217,7 @@ class TeamRightSidebar extends Component {
                       <a role="button" href={`#col-${item.id}`}>
                         <img
                           src={require("../../images/icons/uniform2.png")}
-                          width="40"
+                          width="37"
                           style={{ marginRight: "10px", float: "left" }}
                         />
                         <div

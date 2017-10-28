@@ -37,14 +37,14 @@ const LeagueStandings = () => {
                   <th style={{ color: "#f7c70c" }}>D</th>
                   <th style={{ color: "#49aa9e" }}>L</th>
                   <th>
-                    <img width="20" src={goals} alt="BL" />
+                    <img width="15" src={goals} alt="BL" />
                   </th>
                   <th>LAST 5</th>
                   <th>Pts</th>
                 </tr>
                 <tr>
                   <td style={{ textAlign: "left" }}>
-                    <img src={cup} width="25" />&nbsp;
+                    <img src={cup} width="20" />&nbsp;
                     <span className="hidden-xs">Premiere League</span>
                     <span className="visible-xs">MNC</span>
                   </td>
@@ -65,7 +65,7 @@ const LeagueStandings = () => {
                 </tr>
                 <tr>
                   <td style={{ textAlign: "left" }}>
-                    <img width="25" src={cup} />&nbsp;
+                    <img width="20s" src={cup} />&nbsp;
                     <span className="hidden-xs">ICH Club</span>
                     <span className="visible-xs">MNC</span>
                   </td>

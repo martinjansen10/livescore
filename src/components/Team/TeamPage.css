@@ -4,3 +4,29 @@
 .position-txt {
   color: rgb(182, 183, 183);
 }
+
+@media (max-width: 767px) {
+  .teampage-match > div {
+    width: 100%;
+  }
+  .teampage-match .match-club-name {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .team-caret {
+    display: none;
+  }
+}
+
+.player-table .y-card,
+.player-table .r-card {
+  width: 13px;
+  height: 16px;
+}
+
+.top-stats img,
+.top-stats span {
+  margin-right: 5px;
+}

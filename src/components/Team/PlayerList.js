@@ -41,7 +41,7 @@ class PlayerList extends Component {
         </div>
         <div className="leagueStandings__table">
           <table>
-            <tbody>
+            <tbody className="player-table">
               <tr style={{ color: "#b6b7b7" }}>
                 <th style={{ textAlign: "left", paddingLeft: "10px" }}>
                   PLAYER
@@ -49,32 +49,38 @@ class PlayerList extends Component {
                 <th>#</th>
                 <th>NAT</th>
                 <th style={{ color: "#49aa9e" }}>AGE</th>
-                <th style={{ color: "#f7c70c" }} />
-                <th>
-                  <img width="15" src={time} alt="BL" />
-                </th>
-                <th>
-                  <img width="20" src={goals} alt="BL" />
-                </th>
-                <th>
-                  <img width="20" src={assist} alt="BL" />
-                </th>
-                <th>
-                  <i className="y-card" />
-                </th>
-                <th>
-                  <i className="r-card" />
-                </th>
-                <th>
+                <th style={{ color: "#f7c70c" }}>
                   <img
-                    width="15"
-                    src={require("../../images/icons/refresh_blue.png")}
+                    width="13"
+                    src={require("../../images/icons/pitch.png")}
                     alt="BL"
                   />
                 </th>
                 <th>
+                  <img width="15" src={time} alt="BL" />
+                </th>
+                <th>
+                  <img width="18" src={goals} alt="BL" />
+                </th>
+                <th>
+                  <img width="21" src={assist} alt="BL" />
+                </th>
+                <th className="hidden-xs">
+                  <i className="y-card" />
+                </th>
+                <th className="hidden-xs">
+                  <i className="r-card" />
+                </th>
+                <th className="hidden-xs">
                   <img
-                    width="15"
+                    width="14"
+                    src={require("../../images/icons/refresh_blue.png")}
+                    alt="BL"
+                  />
+                </th>
+                <th className="hidden-xs">
+                  <img
+                    width="14"
                     src={require("../../images/icons/refresh_red.png")}
                     alt="BL"
                   />
@@ -110,10 +116,10 @@ class PlayerList extends Component {
                   <td className="last" align="center">
                     2
                   </td>
-                  <td>6</td>
-                  <td>6</td>
-                  <td>6</td>
-                  <td>6</td>
+                  <td className="hidden-xs">6</td>
+                  <td className="hidden-xs">6</td>
+                  <td className="hidden-xs">6</td>
+                  <td className="hidden-xs">6</td>
                 </tr>
               ))}
             </tbody>

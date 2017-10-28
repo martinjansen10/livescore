@@ -20,13 +20,16 @@ const LeaguePageHeader = () => {
             >
               <option>17/18</option>
             </select>&nbsp;&nbsp;
-            <div style={{ display: "inline-block" }}>
-              <img src={require("../../../images/icons/W.png")} />&nbsp;&nbsp;<span>12</span>&nbsp;&nbsp;
-              <img src={require("../../../images/icons/L.png")} />&nbsp;&nbsp;<span>8</span>&nbsp;&nbsp;
-              <img src={require("../../../images/icons/D.png")} />&nbsp;&nbsp;<span>4</span>&nbsp;&nbsp;
+            <div className="top-stats" style={{ display: "inline-block" }}>
+              <img src={require("../../../images/icons/W.png")} />
+              <span>12</span>
+              <img src={require("../../../images/icons/L.png")} />
+              <span>8</span>
+              <img src={require("../../../images/icons/D.png")} />
+              <span>4</span>
             </div>
             <span
-              className="caret"
+              className="caret team-caret"
               style={{
                 left: "100px",
                 position: "absolute",

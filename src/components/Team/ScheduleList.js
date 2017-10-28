@@ -51,6 +51,9 @@ class ScheduleList extends Component {
                               alt=""
                               className="match-club-logo"
                             />{" "}
+                            <span className="match-club-name visible-xs">
+                              Chelsea
+                            </span>{" "}
                           </div>
                         </div>
                       </div>
@@ -68,9 +71,6 @@ class ScheduleList extends Component {
                             <span className="match-club-name">
                               Manchester United
                             </span>{" "}
-                            <span className="match-club-score visible-xs">
-                              1
-                            </span>
                           </div>
                         </div>
                       </div>
