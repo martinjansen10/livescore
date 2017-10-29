@@ -190,39 +190,70 @@ class PlayerRightSidebar extends Component {
           </span>
           <ul className="nav nav-countries">
             {this.state.playersGk.map((item, idx) => (
-              <div key={idx} id="accordion" className="clearfix">
-                <div
-                  style={{
-                    float: "left"
-                  }}
-                  className="pl-list-table"
-                >
-                  <span style={{ color: "rgb(182, 183, 183)" }}>12/12</span>
-                  <br />
-                  <img src={require("../../images/icons/W.png")} />42 pts
+              <section>
+                <div key={idx} id="accordion" className="clearfix hidden-xs">
+                  <div
+                    style={{
+                      float: "left"
+                    }}
+                    className="pl-list-table"
+                  >
+                    <span style={{ color: "rgb(182, 183, 183)" }}>12/12</span>
+                    <br />
+                    <img src={require("../../images/icons/W.png")} />42 pts
+                  </div>
+                  <div
+                    style={{
+                      float: "left"
+                    }}
+                    className="pl-list-table"
+                  >
+                    <img src={mu} />&nbsp;
+                    <span>Manchester United</span>
+                    <br />
+                    <img src={chelsea} />&nbsp;
+                    <span>Chelsea</span>
+                  </div>
+                  <div
+                    style={{
+                      float: "left"
+                    }}
+                    className="pl-list-table"
+                  >
+                    <span style={{ display: "block", marginTop: "5px" }}>
+                      1
+                    </span>
+                    <span style={{ display: "block", marginTop: "5px" }}>
+                      1
+                    </span>
+                  </div>
                 </div>
-                <div
-                  style={{
-                    float: "left"
-                  }}
-                  className="pl-list-table"
-                >
-                  <img src={mu} />&nbsp;
-                  <span className="hidden-xs">Manchester United</span>
-                  <br />
-                  <img src={chelsea} />&nbsp;
-                  <span className="hidden-xs">Chelsea</span>
+                <div key={idx} className="clearfix visible-xs">
+                  <div>
+                    <p style={{ textAlign: "left", padding: "0 10px" }}>
+                      <span style={{ color: "rgb(182, 183, 183)" }}>
+                        12/12
+                      </span>&nbsp;<span className="flag flag-england" />
+                      <span className="league">EN</span>
+                      <span style={{ float: "right" }}>
+                        42 pts&nbsp;<img
+                          src={require("../../images/icons/W.png")}
+                        />
+                      </span>
+                    </p>
+                    <p style={{ textAlign: "left", padding: "0 10px" }}>
+                      <img src={mu} />&nbsp;
+                      <span>Manchester United</span>
+                      <span style={{ float: "right" }}>3</span>
+                    </p>
+                    <p style={{ textAlign: "left", padding: "0 10px" }}>
+                      <img src={chelsea} />&nbsp;
+                      <span>Chelsea</span>
+                      <span style={{ float: "right" }}>3</span>
+                    </p>
+                  </div>
                 </div>
-                <div
-                  style={{
-                    float: "left"
-                  }}
-                  className="pl-list-table"
-                >
-                  <span style={{ display: "block", marginTop: "5px" }}>1</span>
-                  <span style={{ display: "block", marginTop: "5px" }}>1</span>
-                </div>
-              </div>
+              </section>
             ))}
           </ul>
         </div>

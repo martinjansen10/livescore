@@ -66,10 +66,10 @@ class PlayerList extends Component {
                 <th>
                   <img width="21" src={assist} alt="BL" />
                 </th>
-                <th className="hidden-xs">
+                <th>
                   <i className="y-card" />
                 </th>
-                <th className="hidden-xs">
+                <th>
                   <i className="r-card" />
                 </th>
                 <th className="hidden-xs">
@@ -118,9 +118,11 @@ class PlayerList extends Component {
                     >
                       <img src={mu} />&nbsp;
                       <span className="hidden-xs">Manchester United</span>
+                      <span className="visible-xs">MNU</span>
                       <br />
                       <img src={chelsea} />&nbsp;
                       <span className="hidden-xs">Chelsea</span>
+                      <span className="visible-xs">CHE</span>
                     </div>
                     <div
                       style={{
@@ -142,8 +144,8 @@ class PlayerList extends Component {
                   <td className="last" align="center">
                     2
                   </td>
-                  <td className="hidden-xs">6</td>
-                  <td className="hidden-xs">6</td>
+                  <td>6</td>
+                  <td>6</td>
                   <td className="hidden-xs">6</td>
                   <td className="hidden-xs">6</td>
                 </tr>

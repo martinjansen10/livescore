@@ -2,11 +2,10 @@ import React, { Component } from "react";
 import PlayerPageHeader from "./PlayerPageHeader/PlayerPageHeader";
 import TransferList from "./TransferList";
 import MatchList from "../MatchList/MatchList";
-import ScheduleList from "./ScheduleList";
 import PlayerStatistics from "./PlayerStatistics";
 import PlayerList from "./PlayerList";
 import CareerList from "./CareerList";
-import "./TeamPage.css";
+import "./PlayerPage.css";
 
 import { matches, matches2, matches3 } from "../../seeds/MatchesSeed";
 

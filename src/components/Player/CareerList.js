@@ -68,10 +68,10 @@ class CareerList extends Component {
                 <th>
                   <img width="21" src={assist} alt="BL" />
                 </th>
-                <th className="hidden-xs">
+                <th>
                   <i className="y-card" />
                 </th>
-                <th className="hidden-xs">
+                <th>
                   <i className="r-card" />
                 </th>
                 <th className="hidden-xs">
@@ -92,7 +92,7 @@ class CareerList extends Component {
               {this.state.playerList.map(item => (
                 <tr>
                   <td style={{ textAlign: "left" }}>17/18</td>
-                  <td>
+                  <td className="pl-list-table">
                     <img src={mu} />&nbsp;
                     <span className="hidden-xs">Manchester United</span>
                     <span className="visible-xs">MNC</span>
@@ -104,10 +104,10 @@ class CareerList extends Component {
                   <td className="last" align="center">
                     2
                   </td>
-                  <td className="hidden-xs">6</td>
-                  <td className="hidden-xs">6</td>
-                  <td className="hidden-xs">6</td>
-                  <td className="hidden-xs">6</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>6</td>
                   <td className="hidden-xs">6</td>
                   <td className="hidden-xs">6</td>
                 </tr>
