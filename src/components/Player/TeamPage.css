@@ -1,0 +1,15 @@
+.player-stats ul li {
+  border: none;
+  padding: 5px 15px;
+}
+
+.player-stats ul li a {
+  color: rgb(182, 183, 183);
+  font-size: 13px;
+}
+
+.player-stats ul li span {
+  background-color: none !important;
+  float: right;
+  color: #000;
+}

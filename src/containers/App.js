@@ -16,6 +16,7 @@ export default class App extends Component {
           <Route path="/" component={Home} />
           <Route path="/league" component={Home} />
           <Route path="/team" component={Home} />
+          <Route path="/player" component={Home} />
           <Route component={NotFound} />
         </Switch>
       </div>
