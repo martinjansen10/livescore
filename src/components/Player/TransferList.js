@@ -10,6 +10,7 @@ const TransferList = () => {
       <div className="leagueStandings__header">
         <span>TRANSFERS</span>
       </div>
+      <br />
       <div className="leagueStandings__table">
         <table>
           <tbody>

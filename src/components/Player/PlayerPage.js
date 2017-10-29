@@ -23,9 +23,11 @@ export default class PlayerPage extends Component {
         <div className="leaguePage__latest">
           <PlayerList title="Latest Matches" matches={matches} />
         </div>
+        <br />
         <div className="leaguePage__standings">
           <TransferList />
         </div>
+        <br />
         <div className="leaguePage__latest">
           <CareerList title="Career" matches={matches} />
         </div>

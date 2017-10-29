@@ -39,6 +39,10 @@ class CareerList extends Component {
         >
           <span>{this.props.title}</span>
         </div>
+        <p className="round-header">
+          Season All <span className="caret" />&nbsp;&nbsp;&nbsp;&nbsp;League
+          All <span className="caret" />
+        </p>
         <div className="leagueStandings__table">
           <table>
             <tbody className="player-table">

@@ -8,6 +8,8 @@ import assist from "../../images/icons/assist.png";
 import time from "../../images/icons/time.png";
 import isearch from "../../images/icons/i-search.png";
 import team from "../../images/icons/team.png";
+import chelsea from "../../images/icons/clubs/eng1/chelsea.jpg";
+import mu from "../../images/icons/clubs/eng1/manchesterunited.jpg";
 import { Link } from "react-router-dom";
 
 import topLeagues from "../../seeds/topLeagues";
@@ -142,178 +144,83 @@ class PlayerRightSidebar extends Component {
             </span>
           </div>
           <br />
-          <span className="headline-top">SQUAD</span>
-          <span className="headline">
-            GOALKEEPERS <span style={{ float: "right" }}>Pts</span>
+          <ul className="list-group pl-list">
+            <li className="list-group-item league">
+              <Link to={"/"}>
+                GOALS&nbsp;<img width="17" src={goals} />
+                <span className="badge">12</span>
+              </Link>
+            </li>
+            <li className="list-group-item league">
+              <Link to={"/"}>
+                PENALTY GOALS<span className="badge">3</span>
+              </Link>
+            </li>
+            <li className="list-group-item league">
+              <Link to={"/"}>
+                FREEKICK GOALS<span className="badge">3</span>
+              </Link>
+            </li>
+            <li className="list-group-item league">
+              <Link to={"/"}>
+                ASSISTS&nbsp;<img width="17" src={assist} />
+                <span className="badge">3</span>
+              </Link>
+            </li>
+            <li className="list-group-item league">
+              <Link to={"/"}>
+                TOTAL MINUTES&nbsp;&nbsp;<img width="13" src={time} />
+                <span className="badge">345`</span>
+              </Link>
+            </li>
+            <li className="list-group-item league">
+              <Link to={"/"}>
+                CARDS<span className="badge">
+                  <span style={{ float: "left" }}>23</span>
+                  <i className="y-card" />
+                  <span style={{ float: "left", marginLeft: "5px" }}>23</span>
+                  <i className="r-card" />
+                </span>
+              </Link>
+            </li>
+          </ul>
+          <span className="headline-top">LATEST MATCHES</span>
+          <span className="headline" style={{ textAlign: "center" }}>
+            Gameweek 2 <span className="caret" />
           </span>
           <ul className="nav nav-countries">
             {this.state.playersGk.map((item, idx) => (
-              <div key={idx} id="accordion">
-                <div>
-                  <div
-                    className="clearfix"
-                    role="tab"
-                    style={{ border: "none" }}
-                  >
-                    <span className="panel-title">
-                      <a role="button" href={`#col-${item.id}`}>
-                        {item.captain && (
-                          <img
-                            src={require("../../images/icons/goalkeeper.png")}
-                            width="35"
-                            style={{ marginRight: "10px", float: "left" }}
-                          />
-                        )}
-                        {!item.captain && (
-                          <img
-                            src={require("../../images/icons/uniform1.png")}
-                            width="40"
-                            style={{ marginRight: "10px", float: "left" }}
-                          />
-                        )}
-                        <div
-                          style={{
-                            float: "left",
-                            marginRight: "10px"
-                          }}
-                        >
-                          <span className="hidden-xs">
-                            {item.name}
-                          </span>&nbsp;&nbsp;
-                          {item.captain && (
-                            <img src={require("../../images/icons/c.png")} />
-                          )}
-                          <br />
-                          <span
-                            className="position-txt"
-                            style={{ display: "block", textAlign: "left" }}
-                          >
-                            Goalkeeper
-                          </span>
-                        </div>
-                        <div className="r-pts">
-                          <span className="badge">122</span>
-                        </div>
-                      </a>
-                    </span>
-                  </div>
+              <div key={idx} id="accordion" className="clearfix">
+                <div
+                  style={{
+                    float: "left"
+                  }}
+                  className="pl-list-table"
+                >
+                  <span style={{ color: "rgb(182, 183, 183)" }}>12/12</span>
+                  <br />
+                  <img src={require("../../images/icons/W.png")} />42 pts
                 </div>
-              </div>
-            ))}
-          </ul>
-          <span className="headline">
-            DEFENDERS <span style={{ float: "right" }}>Pts</span>
-          </span>
-          <ul className="nav nav-countries">
-            {this.state.players.map((item, idx) => (
-              <div key={idx} id="accordion">
-                <div>
-                  <div
-                    className="clearfix"
-                    role="tab"
-                    style={{ border: "none" }}
-                  >
-                    <span className="panel-title">
-                      <a role="button" href={`#col-${item.id}`}>
-                        <img
-                          src={require("../../images/icons/uniform2.png")}
-                          width="37"
-                          style={{ marginRight: "10px", float: "left" }}
-                        />
-                        <div
-                          style={{
-                            float: "left",
-                            marginRight: "10px"
-                          }}
-                        >
-                          <span className="hidden-xs">Hugo Lloris</span>
-                          <br />
-                          <span className="position-txt">Goalkeeper</span>
-                        </div>
-                        <div className="r-pts">
-                          <span className="badge">122</span>
-                        </div>
-                      </a>
-                    </span>
-                  </div>
+                <div
+                  style={{
+                    float: "left"
+                  }}
+                  className="pl-list-table"
+                >
+                  <img src={mu} />&nbsp;
+                  <span className="hidden-xs">Manchester United</span>
+                  <br />
+                  <img src={chelsea} />&nbsp;
+                  <span className="hidden-xs">Chelsea</span>
                 </div>
-              </div>
-            ))}
-          </ul>
-          <span className="headline">
-            MIDFIELDERS <span style={{ float: "right" }}>Pts</span>
-          </span>
-          <ul className="nav nav-countries">
-            {this.state.players.map((item, idx) => (
-              <div key={idx} id="accordion">
-                <div>
-                  <div
-                    className="clearfix"
-                    role="tab"
-                    style={{ border: "none" }}
-                  >
-                    <span className="panel-title">
-                      <a role="button" href={`#col-${item.id}`}>
-                        <img
-                          src={require("../../images/icons/uniform2.png")}
-                          width="40"
-                          style={{ marginRight: "10px", float: "left" }}
-                        />
-                        <div
-                          style={{
-                            float: "left",
-                            marginRight: "10px"
-                          }}
-                        >
-                          <span className="hidden-xs">Hugo Lloris</span>
-                          <br />
-                          <span className="position-txt">Goalkeeper</span>
-                        </div>
-                        <div className="r-pts">
-                          <span className="badge">122</span>
-                        </div>
-                      </a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </ul>
-          <span className="headline">
-            FORWARDS <span style={{ float: "right" }}>Pts</span>
-          </span>
-          <ul className="nav nav-countries">
-            {this.state.players.map((item, idx) => (
-              <div key={idx} id="accordion">
-                <div>
-                  <div
-                    className="clearfix"
-                    role="tab"
-                    style={{ border: "none" }}
-                  >
-                    <span className="panel-title">
-                      <a role="button" href={`#col-${item.id}`}>
-                        <img
-                          src={require("../../images/icons/uniform2.png")}
-                          width="40"
-                          style={{ marginRight: "10px", float: "left" }}
-                        />
-                        <div
-                          style={{
-                            float: "left",
-                            marginRight: "10px"
-                          }}
-                        >
-                          <span className="hidden-xs">Hugo Lloris</span>
-                          <br />
-                          <span className="position-txt">Goalkeeper</span>
-                        </div>
-                        <div className="r-pts">
-                          <span className="badge">122</span>
-                        </div>
-                      </a>
-                    </span>
-                  </div>
+                <div
+                  style={{
+                    float: "left"
+                  }}
+                  className="pl-list-table"
+                >
+                  <span style={{ display: "block", marginTop: "5px" }}>1</span>
+                  <span style={{ display: "block", marginTop: "5px" }}>1</span>
                 </div>
               </div>
             ))}

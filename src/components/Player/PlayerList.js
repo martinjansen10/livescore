@@ -39,6 +39,10 @@ class PlayerList extends Component {
         >
           <span>{this.props.title}</span>
         </div>
+        <p className="round-header">
+          Season All <span className="caret" />&nbsp;&nbsp;&nbsp;&nbsp;League
+          All <span className="caret" />
+        </p>
         <div className="leagueStandings__table">
           <table>
             <tbody className="player-table">
@@ -86,20 +90,50 @@ class PlayerList extends Component {
               {this.state.playerList.map(item => (
                 <tr>
                   <td style={{ textAlign: "left" }}>
-                    <img
-                      src={require("../../images/icons/player-team.png")}
-                      width="40"
-                    />&nbsp;
                     <div
                       style={{
-                        float: "right",
-                        marginLeft: "-20px",
-                        marginRight: "10px"
+                        float: "left"
                       }}
+                      className="pl-list-table"
                     >
-                      <span className="hidden-xs">Hugo Lloris</span>
+                      <span style={{ color: "rgb(182, 183, 183)" }}>12/12</span>
                       <br />
-                      <span className="position-txt">Goalkeeper</span>
+                      <img src={require("../../images/icons/W.png")} />
+                    </div>
+                    <div
+                      style={{
+                        float: "left"
+                      }}
+                      className="pl-list-table"
+                    >
+                      <i className="flag flag-england" />
+                      <br />
+                      <span>EN</span>
+                    </div>
+                    <div
+                      style={{
+                        float: "left"
+                      }}
+                      className="pl-list-table"
+                    >
+                      <img src={mu} />&nbsp;
+                      <span className="hidden-xs">Manchester United</span>
+                      <br />
+                      <img src={chelsea} />&nbsp;
+                      <span className="hidden-xs">Chelsea</span>
+                    </div>
+                    <div
+                      style={{
+                        float: "left"
+                      }}
+                      className="pl-list-table"
+                    >
+                      <span style={{ display: "block", marginTop: "5px" }}>
+                        1
+                      </span>
+                      <span style={{ display: "block", marginTop: "6px" }}>
+                        1
+                      </span>
                     </div>
                   </td>
                   <td>1</td>
