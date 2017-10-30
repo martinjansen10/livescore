@@ -96,13 +96,24 @@ class PlayerList extends Component {
                       }}
                       className="pl-list-table"
                     >
-                      <span style={{ color: "rgb(182, 183, 183)" }}>12/12</span>
+                      <span
+                        style={{
+                          color: "rgb(182, 183, 183)",
+                          fontSize: "10px"
+                        }}
+                      >
+                        23.8.17
+                      </span>
                       <br />
-                      <img src={require("../../images/icons/W.png")} />
+                      <img
+                        style={{ marginTop: "3px" }}
+                        src={require("../../images/icons/W.png")}
+                      />
                     </div>
                     <div
                       style={{
-                        float: "left"
+                        float: "left",
+                        marginTop: "5px"
                       }}
                       className="pl-list-table"
                     >

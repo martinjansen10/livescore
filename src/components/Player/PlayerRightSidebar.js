@@ -198,9 +198,26 @@ class PlayerRightSidebar extends Component {
                     }}
                     className="pl-list-table"
                   >
-                    <span style={{ color: "rgb(182, 183, 183)" }}>12/12</span>
+                    <span
+                      style={{ color: "rgb(182, 183, 183)", fontSize: "10px" }}
+                    >
+                      23.8.17
+                    </span>
                     <br />
-                    <img src={require("../../images/icons/W.png")} />42 pts
+                    <img
+                      style={{
+                        marginTop: "3px",
+                        marginRight: "3px",
+                        fontSize: "10px"
+                      }}
+                      src={require("../../images/icons/W.png")}
+                    />
+                    <span style={{ fontSize: "11px" }}>
+                      42{" "}
+                      <strong style={{ color: "rgb(182, 183, 183)" }}>
+                        pts
+                      </strong>
+                    </span>
                   </div>
                   <div
                     style={{

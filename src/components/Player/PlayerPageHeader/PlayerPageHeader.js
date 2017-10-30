@@ -10,6 +10,7 @@ const PlayerPageHeader = () => {
             alt=""
             width="90"
           />
+          <span className="badge badge-player">42</span>
           <select
             className="select-league-date"
             style={{ marginTop: "10px", width: "72px" }}
