@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/Header/Header";
 import LeftSidebar from "../components/LeftSidebar/LeftSidebar";
-import RightSidebar from "../components/RightSidebar/RightSidebar";
+import MatchRightSidebar from "../components/MatchPage/MatchRightSidebar";
 import Footer from "../components/Footer/Footer";
 
 import LeaguePage from "../components/LeaguePage/LeaguePage";
@@ -14,7 +14,7 @@ class Match extends Component {
         <div id="content">
           <MatchPage />
         </div>
-        <RightSidebar />
+        <MatchRightSidebar />
       </div>
     );
   }

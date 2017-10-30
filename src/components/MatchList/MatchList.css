@@ -12,3 +12,11 @@
   color: #acacac;
   font-size: 13px;
 }
+
+.matchPage {
+  background-color: #fff;
+}
+
+.match-table .pl-list-table {
+  margin-right: 7px;
+}

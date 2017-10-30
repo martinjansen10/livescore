@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import MatchSummary from "./MatchSummary";
+import HhMatches from "./HhMatches";
+import LatestMatches from "./LatestMatches";
+import TableMatches from "./TableMatches";
 import ODDS from "./ODDS/ODDS";
 
 class MatchPage extends Component {
@@ -35,8 +39,16 @@ class MatchPage extends Component {
           <img src="/img/plus.png" alt="BL" className="plus" />
           <span className="matchPage__league_title_right">England</span>
         </div>
-        <div className="matchPage__odds">
-          <ODDS />
+        <br />
+        <div>{/*<MatchSummary title="Match Summary" />*/}</div>
+        <div>
+          <HhMatches title="H2H Matches" />
+        </div>
+        <div>
+          <LatestMatches title="Latest Matches" />
+        </div>
+        <div>
+          <TableMatches title="Table" />
         </div>
       </div>
     );
